@@ -1,0 +1,12 @@
+#This is for assignment 2.3, mathematical operations
+#The goal: become familiar with operations
+
+length = 17
+width = 13
+area = length * width
+
+message_a = "The area of the rectangle with a length of "
+message_b = " and a width of "
+message_c = " is "
+
+print(message_a + str(length) + message_b + str(width) + message_c + str(area) + ".")
