@@ -5,7 +5,7 @@
 kilo_1 = 20
 kilo_2 = 90
 kilo_3 = 110
-kilo_4 = 5
+kilo_4 = 888
 
 #conversion factor from kilograms to lbs
 conversion_factor = 2.20462
