@@ -1,0 +1,14 @@
+#Goal: Add a minimum of 4 comments and
+#help the code be more readable
+
+#Maximum tank volume in gallons
+tank_size = 15 
+
+#Maximum distance in miles
+distance = 600 
+
+#Formula to calculate miles per gallon
+mpg = distance / tank_size 
+
+#Print statment
+print("Miles per gallon:", mpg)
