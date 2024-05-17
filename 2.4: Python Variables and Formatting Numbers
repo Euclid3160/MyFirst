@@ -1,0 +1,23 @@
+#the goal is to convert lbs to kilograms
+#use variables and formating
+
+#example weights in kilograms
+kilo_1 = 20
+kilo_2 = 90
+kilo_3 = 110
+kilo_4 = 5
+
+#conversion factor from kilograms to lbs
+conversion_factor = 2.20462
+
+#formulas to convert example weights to lbs
+lbs_1 = kilo_1 * conversion_factor
+lbs_2 = kilo_2 * conversion_factor
+lbs_3 = kilo_3 * conversion_factor
+lbs_4 = kilo_4 * conversion_factor
+
+#print statments for converstions
+print(f"{kilo_1} kilograms is equal to {lbs_1:.2f} pounds.")
+print(f"{kilo_2} kilograms is equal to {lbs_2:.2f} pounds.")
+print(f"{kilo_3} kilograms is equal to {lbs_3:.2f} pounds.")
+print(f"{kilo_4} kilograms is equal to {lbs_4:.2f} pounds.")
