@@ -1,0 +1,42 @@
+#User starts here, enter all your different expenses
+rent = float(input("Enter how much you pay in rent every month: "))
+utilities = float(input("Enter how much you pay in utilities every month: "))
+groceries = float(input("Enter how much you spend on groceries every month: "))
+transport = float(input("Enter how much you spend on transportation every month: "))
+health = float(input("Enter how much you spend on health care every month: "))
+personal = float(input("Enter how much you spend on personal care every month: "))
+clothing = float(input("Enter how much you spend on clothing every month: "))
+debt = float(input("Enter how much you spend on paying off debt every month: "))
+sub = float(input("Enter how much you spend on subscriptions every month: "))
+budget = float(input("Enter your total monthly income here: "))
+print(" ")
+
+#variables to store the % of budget spent on each category 
+rent_budget = float((rent / budget)*100)
+utilities_budget = float((utilities / budget)*100)
+groceries_budget = float((groceries / budget)*100)
+transport_budget = float((transport / budget)*100)
+health_budget = float((health / budget)*100)
+personal_budget = float((personal / budget)*100)
+clothing_budget = float((clothing / budget)*100)
+debt_budget = float((debt / budget)*100)
+sub_budget = float((sub / budget)*100)
+print(" ")
+
+#Print statements for displaying percentage of budget used on each category
+print(f"The percentage of your in come you spend on rent is {rent_budget:.2f}%")
+print(f"The percentage of your in come you spend on utilities is {utilities_budget:.2f}%")
+print(f"The percentage of your in come you spend on groceries is {groceries_budget:.2f}%")
+print(f"The percentage of your in come you spend on transportation is {transport_budget:.2f}%")
+print(f"The percentage of your in come you spend on health care is {health_budget:.2f}%")
+print(f"The percentage of your in come you spend on personal care is {personal_budget:.2f}%")
+print(f"The percentage of your in come you spend on clothing is {clothing_budget:.2f}%")
+print(f"The percentage of your in come you spend on paying debt is {debt_budget:.2f}%")
+print(f"The percentage of your in come you spend on subscriptions is {sub_budget:.2f}%")
+print(" ")
+
+#Variable to find the money the user has remaning for the month
+money = float(budget - rent - utilities - groceries - transport - health - personal - clothing - debt - sub)
+
+#print statment for the left over money
+print(f"After all expenses, you have ${money:.2f} left to spend for the month.")
