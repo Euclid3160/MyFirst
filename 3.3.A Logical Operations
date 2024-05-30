@@ -1,5 +1,5 @@
 #User will enter the first integer
-x= int(input("Enter an integer: x="))
+x = int(input("Enter an integer: x="))
 
 #user will enter the second integer
 y = int(input("Enter another integer: y="))
