@@ -1,0 +1,15 @@
+#defining a function that will calculate simple interest
+#and return that value as the output
+def calculated_interest(principal, rate, time):
+    simple_interest = (principal*rate*time)/100
+    return simple_interest
+
+#will ask the user to input information: principal amount, rate of interest, and length of time
+principal = float(input("What was the principal amount? "))
+rate = float(input("what is the interest rate per year? "))
+time = int(input("How many years will this money be borrowed or invested? "))
+
+#calling the function and outputing the information in a user friendly way.
+print(f"the simple interest for a principal amount of ${principal:,.2f} \
+    at an interest rate of {rate}% over a period of {time} years is: \ 
+    ${calculated_interest(principal, rate, time):,.2f}")
