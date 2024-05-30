@@ -1,0 +1,22 @@
+#Number of beers we start with
+i = 99
+
+#This will take us through the song
+while i > 2:
+    print(i, "bottles of beer on the wall,")
+    print(i, "bottles of beer,")
+    print("Take one down, pass it around,")
+    i -= 1
+    print(i, "bottles of beer on the wall.\n")
+    if i < 3:
+        print(i, "bottles of beer on the wall,")
+        print(i, "bottles of beer,")
+        print("Take one down, pass it around,")
+        i -= 1
+        print(i, "bottle of beer on the wall.\n")
+        if i < 2:
+            print(i, "bottle of beer on the wall,")
+            print(i, "bottle of beer,")
+            print("Take one down pass it around,")
+            i -= 1
+            print(i, "bottles of beer on the wall.")
