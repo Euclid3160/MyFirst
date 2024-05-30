@@ -1,0 +1,34 @@
+#The song is humpty dumpty
+#the function is going to replace the words for:
+#humpty dumpty, wall, king, horse, chimney, ankle, hooves, ten, and happy
+def mad_lib(name, noun, noble, animal, home, person_part, animal_part, number, emotion):
+    print(f"{name} sat on a {noun}")
+    print(f"{name} had a great fall")
+    print(f"All the {noble}'s {animal} and all the {noble}'s men")
+    print(f"Couldn't put {name} together again")
+    print(f"{name} sat on the ground")
+    print(f"{name} looked all around")
+    print(f"Gone were the {home}, gone were the roofs")
+    print(f"All he could see were {person_part}s and {animal_part}s")
+    print(f"Poor old {name}")
+    print(f"Poor old {name}")
+    print(f"Poor old {name}")
+    print(f"{name} counted to {number}")
+    print(f"{name} built up again")
+    print(f"All the {noble}'s {animal}s and all the {noble}'s men")
+    print(f"Are {emotion} that {name} is together again")
+
+#this will ask the user for replacement words for word in the song
+name = input("Enter a name: ") #humpty dumpty
+noun = input("Enter an object: ") #wall
+noble = input("Enter a nobility title(king, queen, duke, ect): ")#king
+animal = input("Enter an animal: ")#horses
+home = input("Enter something that is on the exterior of a home: ")#chimneys
+person_part = input("Enter a part of the human body: ")#ankles
+animal_part = input("enter any part from the animal you choose earlier: ")#hooves
+number = input("enter a number: ")#ten
+emotion = input("enter an emotion: ")#happy
+
+#calling the function:
+#will use the words input by the user for the song
+mad_lib(name, noun, noble, animal, home, person_part, animal_part, number, emotion)
