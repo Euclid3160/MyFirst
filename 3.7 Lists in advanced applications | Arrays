@@ -1,0 +1,13 @@
+#List for the different times of day
+time_slots =["morning", "midday", "afternoon", "evening"]
+#empty list to store hear rate for each time of day
+heart_rates = []
+#ask the user hear rate at each time of day
+#store data in heart_rates
+for time in time_slots:
+    x = int(input(f"What was your hear rate at {time}?" ))
+    heart_rates.append(x)
+#formula to calculate average heart rate based on given data
+a = sum(heart_rates)/4
+#display average heart rate
+print("Your average heart rate for the day is:", a)
