@@ -1,0 +1,14 @@
+#defining a function to calculate the area of a square
+def square(side):
+    area_1 = side*side
+    print(f"The area of the square with length {side} is {area_1}")
+#defining a function to calculate the area of a circle
+def circle(radius):
+    area_2 = 3.14*radius
+    print(f"The area of the circle with radius {radius} is {area_2}")
+#using the function to calculate the are of a square
+#with a side lenght 15 units
+square(15)
+#using the function to calculate the area of a circle
+#with radius 10 units
+circle(10)
