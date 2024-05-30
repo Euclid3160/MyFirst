@@ -1,0 +1,19 @@
+#User will enter the first integer
+x= int(input("Enter an integer: x="))
+
+#user will enter the second integer
+y = int(input("Enter another integer: y="))
+
+#this will go through 6 different comparisons of the two integers
+a = x > 100 and y > 100
+print("Both x and y are larger than 100:", a)
+b = x%2!=0 and y%2!=0
+print("Both x and y are odd:",b)
+c = x%5==0 or y%5==0
+print("Either x or y is a devisable by 5:",c)
+d = x > 0 or y > 0
+print("Either x or y is a positive integer:",d)
+e = not(x<-100)
+print("x is not less than -100:", e)
+f = not(y==x)
+print("x and y are not the same number:", f)
