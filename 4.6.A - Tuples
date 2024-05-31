@@ -1,0 +1,16 @@
+#Function for listing items in truple
+#and displaying the number of items in truple
+def main():
+    programming_class = (
+    "Intro to Python", 
+    "Advanced Python", 
+    "Database Essentials", 
+    "Web Development Basics", 
+    "Data Structures in Python", 
+    "Web Design Fundamentals", 
+    )
+    for lecture in programming_class:
+        print(lecture)
+    print(f"There are {len(programming_class)} different programming classes ")
+
+main()
