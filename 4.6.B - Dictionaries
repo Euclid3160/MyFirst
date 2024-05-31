@@ -1,0 +1,39 @@
+#creating our dictionary
+nato_alphabet = {
+    "a":"alpha",
+    "b":"bravo",
+    "c":"charlie", 
+    "d":"delta", 
+    "e":"echo", 
+    "f":"foxtrot",
+    "g":"golf", 
+    "h":"hotel",
+    "i":"india",
+    "j":"juliette",
+    "k":"kilo",
+    "l":"lima",
+    "m":"mike",
+    "n":"november",
+    "o":"oscar",
+    "p":"papa",
+    "q":"quebec",
+    "r":"romeo",
+    "s":"sierra",
+    "t":"tango",
+    "u":"uniform",
+    "v":"victor",
+    "w":"whiskey",
+    "x":"x-ray",
+    "y":"yankee",
+    "z":"zulu",
+}
+#defining a function:
+#ask the user for any word
+#to output corresponding NATO phonetic term for each letter
+def main():
+    user_word = input("Enter any word: ")
+    user_word = user_word.lower()
+    for i in user_word:
+        print(nato_alphabet[i])
+    
+main()
