@@ -15,7 +15,7 @@ except ValueError:
           """)
 except:
     print("""
-          I don't know what to tell you...
+          I don't know what you did, but that isn't right...
           """)
 
 
