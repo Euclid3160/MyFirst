@@ -1,24 +1,24 @@
-#Empty list to store names
+# Empty list to store names
 names_list =[]
 swapped = True
 
-#This will ask the user to enter names
-#Each name will be stored in names_list
-#after five names the loop will end
+# This will ask the user to enter names
+# Each name will be stored in names_list
+# after five names the loop will end
 for i in range(0,5):
     print("Tell me some of your favorite names.")
     names = input("")
     names_list.append(names)
 
-#this will make sure all names are lower case
-#it will display all the names choosen in the order entered
+# this will make sure all names are lower case
+# it will display all the names choosen in the order entered
 for i in range(0, len(names_list)):
     names_list[i]=names_list[i].lower()
 print("The names you have choosen are", names_list)
 print("")
 
-#This will sort the names in alphabetical order using the bubble sort
-#and display the list
+# This will sort the names in alphabetical order using the bubble sort
+# and display the list
 while swapped:
     swapped = False
     for i in range(len(names_list) - 1):
@@ -27,8 +27,8 @@ while swapped:
             names_list[i], names_list[i + 1] = names_list[i + 1], names_list[i]
 print(names_list,"\n")
 
-#This will reverse the order of the list
+# This will reverse the order of the list
 names_list.reverse()
 
-#display the reversed list
+# display the reversed list
 print(names_list)
