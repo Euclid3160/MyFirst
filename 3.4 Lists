@@ -1,25 +1,25 @@
-#list for the days in the week
+# list for the days in the week
 days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
 
-#empty list to store steps taken each day
+# empty list to store steps taken each day
 steps = []
 
-#will iterate through the days of the week
-#user will input steps take each day
-#steps taken will be stored in list steps
+# will iterate through the days of the week
+# user will input steps take each day
+# steps taken will be stored in list steps
 for i in days:
     print("How many steps did you take on",i)
     steps_days = int(input())
     steps.append(int(steps_days))
 
-#This will print how many steps were taken each day in a user friendly way
+# This will print how many steps were taken each day in a user friendly way
 for i in range(0,7):
     print("on",days[i],"you took",steps[i],"steps")
 
-#this will calculate the total number of steps taken for the week
+# this will calculate the total number of steps taken for the week
 total_steps = sum(steps)
 print("For the week you took a total of", total_steps, "steps")
 
-#this will calculate the average steps taken per day
+# this will calculate the average steps taken per day
 average = round(sum(steps)/len(steps))
 print("on average you took", average, "steps a day")
