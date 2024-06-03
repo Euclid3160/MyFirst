@@ -4,8 +4,8 @@ def square_number():
     number = input("Enter a number to square: ")
     squared_number = int(number) ** 2
     print(f"The square of {number} is {squared_number}.")
-#It seems like the only issue that can come from the input is a value error
-#if they put in a string or float, the code will fail. 
+# It seems like the only issue that can come from the input is a value error
+# if they put in a string or float, the code will fail. 
 try:
     square_number()
 except ValueError:
