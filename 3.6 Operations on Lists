@@ -1,29 +1,29 @@
-#list of available seats
+# list of available seats
 available_seats = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,]
-#list to store picked seats by user
+# list to store picked seats by user
 picked_seats = []
-#display all available seats
+# display all available seats
 print("the seats that are available are seats: ", available_seats)
 
-#range was choosen by hoping a user wouldn't enter a vary large or small number
+# range was choosen by hoping a user wouldn't enter a vary large or small number
 for i in range(-99999, 99999):
-    #Will ask the user to choose from available seats
+    # Will ask the user to choose from available seats
     x = int(input("From the listed seats, Which would you like to purchase? (when you are finished enter 0): "))
-    #If the seat is available, it will be removed from available_seats, and be added to picked_seats
-    #Then the user will be showen seats still available and can continue to choose
+    # If the seat is available, it will be removed from available_seats, and be added to picked_seats
+    # Then the user will be showen seats still available and can continue to choose
     if x in available_seats:
         picked_seats.append(x)
         available_seats.remove(x)
         print("seats still available:", available_seats)
-    #if the user enters 0 the loop will end
+    # if the user enters 0 the loop will end
     elif x == 0:
         break
-    #if the user picks a seat that isn't available or outside the range of available_seats
-    #the user will be asked to pick a different seat
+    # if the user picks a seat that isn't available or outside the range of available_seats
+    # the user will be asked to pick a different seat
     else:
         print("That seat is not an option, please try a different seat number.")
-#This will show all the seats that have been choosed
-#and all the seats still available
+# This will show all the seats that have been choosed
+# and all the seats still available
 print("seats you have choosen:")
 print(picked_seats)
 print("seats still available:")
