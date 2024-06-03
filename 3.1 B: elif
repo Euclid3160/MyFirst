@@ -1,8 +1,10 @@
-#User will input a number grade 0 to greater than 100 depending on scale.
+# User will input a number grade 0 to greater than 100 depending on scale.
 x = float(input("What is the students numeric grade? "))
 
-#This will output the letter grade
-if x < 60:
+# This will output the letter grade
+if x < 0:
+    print ("That doesn't seem right, try again.")
+elif x < 60:
     print ("Grade: F")
 elif x < 70:
     print("Grade: D")
@@ -12,5 +14,8 @@ elif x < 90:
     print("Grade: B")
 elif x < 100:
     print("Grade: A")
-else:
+elif x < 110:
     print("Grade: A+")
+else:
+    print("Are you sure that is the right number? That's so high!")
+# I know I could put it in a while loop if they put an invalid response, but that's the next lesson.
