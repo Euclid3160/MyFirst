@@ -1,31 +1,31 @@
-#Global variables
+# Global variables
 LBS_TO_KILOS = 0.453592
 IN_TO_M = 0.0254
 
-#defining my function
+# defining my function
 def bmi():
-    #range choosen as very large and small numbers hoping user won't choose numbers outside of range
+    # range choosen as very large and small numbers hoping user won't choose numbers outside of range
     for i in range(-999999,999999):
-        #Have the user input weight
+        # Have the user input weight
         weight = float(input("Enter your weight in pounds: "))
-        #Weights shouldn't be negative and the heaviest person to ever live was around 800 lbs
+        # Weights shouldn't be negative and the heaviest person to ever live was around 800 lbs
         if weight < 0 or weight > 800:
             print("Sorry that is not a valid weight, please try again")
         else:
             break
     for i in range(-999999,999999):
         height = int(input("Enter your height in inches: "))
-        #heights shouldn't be negative, and the tallest person to ever live was about 9ft
+        # heights shouldn't be negative, and the tallest person to ever live was about 9ft
         if height < 0 or height > 108:
             print("Sorry that is not an acceptable height, please try again.")
         else:
             break
-    #Creating variables to convert to metric
+    # Creating variables to convert to metric
     weight_kilo = weight*LBS_TO_KILOS
     height_meter = height*IN_TO_M
-    #calculating the BMI
+    # calculating the BMI
     bmi = weight_kilo / (height_meter*height_meter)
-    #displaying bmi and classification
+    # displaying bmi and classification
     print(f"Your body mass index is {bmi:,.2f}.")
     if bmi < 18.5:
         print("You are underweight.")
@@ -34,5 +34,5 @@ def bmi():
     else:
         print("You are overweight.")
 
-#Envoking the function
+# Envoking the function
 bmi()
