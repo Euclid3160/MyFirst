@@ -1,4 +1,4 @@
-#This is a function to calculate the factorial of any number, n
+# This is a function to calculate the factorial of any number, n
 def factorial(n):
     if n == 0:
         return 1
@@ -7,12 +7,12 @@ def factorial(n):
     else:
         return n*factorial(n-1)
 
-#This function prompts the user to input an integer
-#Then it calls on the first function 
-#finally it desplays the results in a user friendly way.
+# This function prompts the user to input an integer
+# Then it calls on the first function 
+# finally it desplays the results in a user friendly way.
 def main():
     n = int(input("Enter a non-negative integer: "))
     result = factorial(n)
     print(f"The factorial of {n} is {result}.")
-#invoking the function
+# invoking the function
 main()
