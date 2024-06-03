@@ -1,16 +1,16 @@
-#Here we import the random extension
+# Here we import the random extension
 import random
-#defining my function as a guessing game.
+# defining my function as a guessing game.
 def guess_a_number_game():
-    #generating a psudorandom number
+    # generating a psudorandom number
     y = random.randint(1,100)
-    #print(y) here if you're a cheater!
-    #let the game begin
+    # print(y) here if you're a cheater!
+    # let the game begin
     x = int(input("guess a number between 1 and 100: "))
-    #user will stay in the while loop as long as they don't guess the right number
+    # user will stay in the while loop as long as they don't guess the right number
     while x != y:
         z = x-y
-        #Different hints given based on how far off they are
+        # Different hints given based on how far off they are
         if abs(z) < 5:
             print("VERY HOT!")
             x = int(input("Guess again: "))
