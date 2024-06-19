@@ -4,7 +4,7 @@ def square(side):
     print(f"The area of the square with length {side} is {area_1}")
 # defining a function to calculate the area of a circle
 def circle(radius):
-    area_2 = 3.14*radius
+    area_2 = 3.14*radius*radius
     print(f"The area of the circle with radius {radius} is {area_2}")
 # using the function to calculate the are of a square
 # with a side lenght 15 units
