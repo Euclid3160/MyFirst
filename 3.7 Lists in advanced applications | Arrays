@@ -1,13 +1,31 @@
-# List for the different times of day
-time_slots =["morning", "midday", "afternoon", "evening"]
-# empty list to store hear rate for each time of day
+#Defining a list for different parts of the day
+
+time_slots = ["Morning", "Midday", "Afternoon", "Evening"]
+
+#Empty list to store heart rates
+
 heart_rates = []
-# ask the user hear rate at each time of day
-# store data in heart_rates
+
+#User input for heart rate
+#storing results in empty list
+
 for time in time_slots:
-    x = int(input(f"What was your hear rate at {time}?" ))
-    heart_rates.append(x)
-# formula to calculate average heart rate based on given data
-a = sum(heart_rates)/4
-# display average heart rate
-print("Your average heart rate for the day is:", a)
+    rate = float(input(f"What was you heart rate at {time} in BPM? "))
+    heart_rates.append([rate,time])
+
+#printing the newly made list
+
+print(f"This is your heart rate breakdown: {heart_rates}.")
+
+#summing up the heartrates for the day
+
+total = 0
+for heart_rate in heart_rates:
+    total += heart_rate[0]
+
+#calculating the average heart rate
+
+average = round(total / len(heart_rates))
+print(f"your average heart rate for the day is {average} bpm.")
+
+
