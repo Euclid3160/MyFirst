@@ -1,0 +1,66 @@
+package introtoprogramming.finalproject;
+import java.util.*;
+import java.util.ArrayList;
+
+/**
+ *
+ * @author rhenry
+ */
+public class FinalProject {
+    
+
+    public static void main(String[] args) {
+        
+        //Creating an ArrayList that will act as our Miner Queue
+        ArrayList <Integer> MinerQueue = new ArrayList();
+        
+        //Creating an ArrayList that will act as our Gamer Queue
+        ArrayList <Integer> GamerQueue = new ArrayList();
+        
+        //Initializing coins to collect and mine
+        int coins;
+        //Represents total of number of coins that are in the room
+        int RoomCoins = 0;
+        
+        //Adding 20 miners to the queue, ID number 1 - 20
+        for (int i = 0; i < 20; i++){
+            int MinerId = i+1;
+            MinerQueue.add(MinerId);
+        }
+        
+        //Adding 10 "gamers" the the queue, ID number 1-10
+        for (int i = 0; i < 10; i++){
+            int GamerId = i+100;
+            GamerQueue.add(GamerId);
+        }
+        
+        //Each miner adds up to 5 coins to the room
+        for (int MinerId : MinerQueue){
+            coins = (int) Math.floor(Math.random()*5+1);
+            RoomCoins += coins;
+            System.out.println("Miner " + MinerId + " added " + coins + " coins to the room");
+        }
+        
+        //This loop will continue until the gamer queue is empty
+        while (!GamerQueue.isEmpty()){
+            //Showing which gamers turn it is
+            System.out.println("Gamer " + GamerQueue.getFirst()+ " is entering the room");
+            //Each gamer tries to colledct 20 coins and leave the room
+            if (RoomCoins >= 20){
+                RoomCoins -= 20;
+                System.out.println("Gamer " + GamerQueue.getFirst() + " found 20 coins and left the room");
+                GamerQueue.removeFirst();
+            //If a gamer can't collect enough coins, we call back the miners to fill the room
+            }else{
+                System.out.println("Gamer " + GamerQueue.getFirst() + " wants 20 coins but did not find enough ...");
+                System.out.println("Gamer " + GamerQueue.getFirst() + " left the room and called the Miners back");
+                //Each minor adds up to 5 coins to the room again
+                for (int MinerId : MinerQueue){
+                    coins = (int) Math.floor(Math.random()*5+1);
+                    RoomCoins += coins;
+                    System.out.println("Miner " + MinerId + " added " + coins + " coins to the room");
+        }
+            }
+        }
+    }
+}
